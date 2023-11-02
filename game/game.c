@@ -72,53 +72,47 @@ void ComputerInput(char arr[LIN][VER])
 	cross(arr);
 	}
 
- char IsWin(char arr[LIN][VER])
+char IsWin(char arr[LIN][VER])
 {
-	 int num = 0;
-	 for (int i = 0; i < LIN; i++)
-	 {
-		 for (int k = 0; k < VER; k++)
-		 {
-			 if (arr[i][k] == ' ')
-				 break;
-			 else
-				 num++;
-		 }
-	 }
-	 if (num == 9)
-		 return 'E';
-	 if (arr[1][1] == arr[2][2] && arr[1][1] == arr[0][0] && arr[2][2] == arr[0][0] && arr[1][1] != ' ' && arr[0][0] != ' ' && arr[2][2] != ' ')
-	 {
-		 if (arr[0][0] == '*')
-			 return '*';
-		 if (arr[0][0] == '#')
-			 return '#';
-	 }
-	 if (arr[2][0] == arr[1][1] && arr[2][0] == arr[0][2] && arr[1][1] == arr[0][2] && arr[1][1] != ' ' && arr[2][0] != ' ' && arr[0][2] != ' ')
-	 {
-		 if (arr[0][0] == '*')
-			 return '*';
-		 if (arr[0][0] == '#')
-			 return '#';
-	 }
-	for (int i = 0; i <= 2; i++)
+	int num = 0;
+	for (int i = 0; i < LIN; i++)
 	{
-		if (arr[i][0] == arr[i][1] && arr[i][1] == arr[i][2] && arr[i][0] == arr[i][2])
+		for (int k = 0; k < VER; k++)
 		{
-			if (arr[i][0] == '*')
-			return '*';
-			if (arr[i][0] == '#')
-			return '#';
+			if (arr[i][k] == ' ')
+				break;
+			else
+				num++;
 		}
-		if (arr[0][i] == arr[1][i] && arr[1][i] == arr[2][i] && arr[0][i] == arr[2][i])
-		{
-			if (arr[0][i] == '*')
-			return '*';
-			if (arr[0][i] == '#')
-			return '#';
-		}
-		else
-			return 'C';
+	}
+	if (num == 9)
+	{
+		return 'E';
 	}
 
-}
+	if (arr[1][1] == arr[0][0] && arr[2][2] == arr[1][1] && arr[1][1] != ' ')
+	{
+		return arr[1][1];
+	}
+	if (arr[2][0] == arr[1][1] && arr[1][1] == arr[0][2] && arr[1][1] != ' ')
+	{
+		return arr[1][1];
+	}
+	for (int i = 0; i <= 2; i++)
+	{
+		if (arr[i][0] == arr[i][1] && arr[i][1] == arr[i][2] && arr[i][1] != ' ')
+		{
+			return arr[i][1];
+		}
+	}
+
+	for (int i = 0; i <= 2; i++)
+	{
+		if (arr[0][i] == arr[1][i] && arr[1][i] == arr[2][i] && arr[i][1] != ' ')
+		{
+			return arr[0][i];
+		}
+	}
+	return 'C';
+ }
+

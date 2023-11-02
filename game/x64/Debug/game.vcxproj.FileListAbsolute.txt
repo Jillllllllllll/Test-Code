@@ -1,1 +1,2 @@
 E:\jecom\Documents\game\x64\Debug\game.exe
+E:\studio\studio\code\Test-Code\game\x64\Debug\game.exe

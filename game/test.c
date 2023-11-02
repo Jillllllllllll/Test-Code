@@ -86,8 +86,9 @@ void start()
 	} while (input);
 	printf("ÓÎÏ·ÍË³ö\n");
 }
-int main()
+int main()  
 {
 	start();
 	return 0;
 }
+
