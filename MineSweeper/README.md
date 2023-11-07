@@ -14,12 +14,11 @@
 
 1.开始之后会显示游戏数据:
 
-![image-20231107203302992](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231107203302992.png)
-
+https://github.com/Jillllllllllll/Test-Code/blob/main/MineSweeper/Picture/image-20231107203302992.png
 2.输入坐标并回车:
 
-![image-20231107203404724](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231107203404724.png)
+https://github.com/Jillllllllllll/Test-Code/blob/main/MineSweeper/Picture/image-20231107203404724.png
 
 3.找出所有地雷即可:
 
-![image-20231107203429201](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231107203429201.png)
+https://github.com/Jillllllllllll/Test-Code/blob/main/MineSweeper/Picture/image-20231107203429201.png
